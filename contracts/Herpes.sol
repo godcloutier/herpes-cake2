@@ -68,9 +68,6 @@ contract Herpes is Context, IBEP20, Initializable {
 
     bool private _mintable;
 
-      constructor() public {
-    }
-
     /**
      * @dev Throws if called by any account other than the owner.
      */
@@ -83,11 +80,30 @@ contract Herpes is Context, IBEP20, Initializable {
         return _owner;
     }
 
+    constructor(address owner, address _routerAddress) public {
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(_routerAddress);
+
+        /* _mintable = __mintable;
+         _mint(__owner, __amount);*/
+
+        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
+        .createPair(address(this), _uniswapV2Router.WETH());
+
+        // set the rest of the contract variables
+        uniswapV2Router = _uniswapV2Router;
+        //exclude owner and this contract from fee
+
+        _isExcludedFromFee[owner] = true;
+        _isExcludedFromFee[address(this)] = true;
+
+        emit Transfer(address(0), owner, _tTotal);
+    }
+
 
     /**
          * @dev sets initials supply and the owner
          */
-    function initialize(string memory __name, string memory __symbol, uint8 __decimals, uint256 _txFee, uint256 _lpFee, uint256 __maxAmount, uint256 __sellmaxAmount, bool __mintable, address _routerAddress, address __owner) public initializer {
+    function initialize(string memory __name, string memory __symbol, uint8 __decimals, uint256 _txFee, uint256 _lpFee, uint256 __maxAmount, uint256 __sellmaxAmount, bool __mintable,  address __owner) public initializer {
         _owner = __owner;
         _name = __name;
         _symbol = __symbol;
@@ -103,21 +119,7 @@ contract Herpes is Context, IBEP20, Initializable {
 
 
         _rOwned[__owner] = _rTotal;
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(_routerAddress);
 
-        /* _mintable = __mintable;
-         _mint(__owner, __amount);*/
-
-        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
-        .createPair(address(this), _uniswapV2Router.WETH());
-
-        // set the rest of the contract variables
-        uniswapV2Router = _uniswapV2Router;
-        //exclude owner and this contract from fee
-        _isExcludedFromFee[__owner] = true;
-        _isExcludedFromFee[address(this)] = true;
-
-        emit Transfer(address(0), _owner, _tTotal);
     }
 
   /**

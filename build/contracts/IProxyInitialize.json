@@ -40,7 +40,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"decimals\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"mintable\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/nicolascloutier/Desktop/herpes/contracts/IProxyInitialize.sol\":\"IProxyInitialize\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/nicolascloutier/Desktop/herpes/contracts/IProxyInitialize.sol\":{\"keccak256\":\"0x5d4e905d92e48b1791e2e190b9461864e248d9b2c45a42db40f9242f33348488\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://eca9133f3f1d0ddb8151034fffea52af86a11450d2aa24a373ce9e3b972d7f54\",\"dweb:/ipfs/QmNctBbVuWjrkgu7YbigKg4kPbjVQEKZb6e9NjzC1MxiZf\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.2+commit.661d1103\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"symbol\",\"type\":\"string\"},{\"internalType\":\"uint8\",\"name\":\"decimals\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"mintable\",\"type\":\"bool\"},{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/nicolascloutier/IdeaProjects/herpes-cake/contracts/IProxyInitialize.sol\":\"IProxyInitialize\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/nicolascloutier/IdeaProjects/herpes-cake/contracts/IProxyInitialize.sol\":{\"keccak256\":\"0x5d4e905d92e48b1791e2e190b9461864e248d9b2c45a42db40f9242f33348488\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://eca9133f3f1d0ddb8151034fffea52af86a11450d2aa24a373ce9e3b972d7f54\",\"dweb:/ipfs/QmNctBbVuWjrkgu7YbigKg4kPbjVQEKZb6e9NjzC1MxiZf\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -49,20 +49,20 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.2;\n\ninterface IProxyInitialize {\n    function initialize(string calldata name, string calldata symbol, uint8 decimals, uint256 amount, bool mintable, address owner) external;\n}",
-  "sourcePath": "/Users/nicolascloutier/Desktop/herpes/contracts/IProxyInitialize.sol",
+  "sourcePath": "/Users/nicolascloutier/IdeaProjects/herpes-cake/contracts/IProxyInitialize.sol",
   "ast": {
-    "absolutePath": "/Users/nicolascloutier/Desktop/herpes/contracts/IProxyInitialize.sol",
+    "absolutePath": "/Users/nicolascloutier/IdeaProjects/herpes-cake/contracts/IProxyInitialize.sol",
     "exportedSymbols": {
       "IProxyInitialize": [
-        881
+        2474
       ]
     },
-    "id": 882,
+    "id": 2475,
     "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 865,
+        "id": 2458,
         "literals": [
           "solidity",
           "^",
@@ -78,9 +78,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 881,
+        "id": 2474,
         "linearizedBaseContracts": [
-          881
+          2474
         ],
         "name": "IProxyInitialize",
         "nameLocation": "73:16:4",
@@ -88,7 +88,7 @@
         "nodes": [
           {
             "functionSelector": "ef3ebcb8",
-            "id": 880,
+            "id": 2473,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -96,17 +96,17 @@
             "nameLocation": "105:10:4",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 878,
+              "id": 2471,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 867,
+                  "id": 2460,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "132:4:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "116:20:4",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -115,7 +115,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 866,
+                    "id": 2459,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "116:6:4",
@@ -128,12 +128,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 869,
+                  "id": 2462,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "154:6:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "138:22:4",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -142,7 +142,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 868,
+                    "id": 2461,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "138:6:4",
@@ -155,12 +155,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 871,
+                  "id": 2464,
                   "mutability": "mutable",
                   "name": "decimals",
                   "nameLocation": "168:8:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "162:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -169,7 +169,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 870,
+                    "id": 2463,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "162:5:4",
@@ -182,12 +182,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 873,
+                  "id": 2466,
                   "mutability": "mutable",
                   "name": "amount",
                   "nameLocation": "186:6:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "178:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -196,7 +196,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 872,
+                    "id": 2465,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "178:7:4",
@@ -209,12 +209,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 875,
+                  "id": 2468,
                   "mutability": "mutable",
                   "name": "mintable",
                   "nameLocation": "199:8:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "194:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -223,7 +223,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 874,
+                    "id": 2467,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "194:4:4",
@@ -236,12 +236,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 877,
+                  "id": 2470,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "217:5:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "209:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -250,7 +250,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 876,
+                    "id": 2469,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:7:4",
@@ -266,37 +266,37 @@
               "src": "115:108:4"
             },
             "returnParameters": {
-              "id": 879,
+              "id": 2472,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "232:0:4"
             },
-            "scope": 881,
+            "scope": 2474,
             "src": "96:137:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 882,
+        "scope": 2475,
         "src": "63:172:4"
       }
     ],
     "src": "38:197:4"
   },
   "legacyAST": {
-    "absolutePath": "/Users/nicolascloutier/Desktop/herpes/contracts/IProxyInitialize.sol",
+    "absolutePath": "/Users/nicolascloutier/IdeaProjects/herpes-cake/contracts/IProxyInitialize.sol",
     "exportedSymbols": {
       "IProxyInitialize": [
-        881
+        2474
       ]
     },
-    "id": 882,
+    "id": 2475,
     "license": "UNLICENSED",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 865,
+        "id": 2458,
         "literals": [
           "solidity",
           "^",
@@ -312,9 +312,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 881,
+        "id": 2474,
         "linearizedBaseContracts": [
-          881
+          2474
         ],
         "name": "IProxyInitialize",
         "nameLocation": "73:16:4",
@@ -322,7 +322,7 @@
         "nodes": [
           {
             "functionSelector": "ef3ebcb8",
-            "id": 880,
+            "id": 2473,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -330,17 +330,17 @@
             "nameLocation": "105:10:4",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 878,
+              "id": 2471,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 867,
+                  "id": 2460,
                   "mutability": "mutable",
                   "name": "name",
                   "nameLocation": "132:4:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "116:20:4",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -349,7 +349,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 866,
+                    "id": 2459,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "116:6:4",
@@ -362,12 +362,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 869,
+                  "id": 2462,
                   "mutability": "mutable",
                   "name": "symbol",
                   "nameLocation": "154:6:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "138:22:4",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -376,7 +376,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 868,
+                    "id": 2461,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "138:6:4",
@@ -389,12 +389,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 871,
+                  "id": 2464,
                   "mutability": "mutable",
                   "name": "decimals",
                   "nameLocation": "168:8:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "162:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -403,7 +403,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 870,
+                    "id": 2463,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "162:5:4",
@@ -416,12 +416,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 873,
+                  "id": 2466,
                   "mutability": "mutable",
                   "name": "amount",
                   "nameLocation": "186:6:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "178:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -430,7 +430,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 872,
+                    "id": 2465,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "178:7:4",
@@ -443,12 +443,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 875,
+                  "id": 2468,
                   "mutability": "mutable",
                   "name": "mintable",
                   "nameLocation": "199:8:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "194:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -457,7 +457,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 874,
+                    "id": 2467,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "194:4:4",
@@ -470,12 +470,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 877,
+                  "id": 2470,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "217:5:4",
                   "nodeType": "VariableDeclaration",
-                  "scope": 880,
+                  "scope": 2473,
                   "src": "209:13:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -484,7 +484,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 876,
+                    "id": 2469,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "209:7:4",
@@ -500,19 +500,19 @@
               "src": "115:108:4"
             },
             "returnParameters": {
-              "id": 879,
+              "id": 2472,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "232:0:4"
             },
-            "scope": 881,
+            "scope": 2474,
             "src": "96:137:4",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 882,
+        "scope": 2475,
         "src": "63:172:4"
       }
     ],
@@ -524,7 +524,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-06-06T06:33:44.275Z",
+  "updatedAt": "2021-06-06T17:55:04.882Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
