@@ -1,3 +1,56 @@
+/**
+
+ /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$$  /$$$$$$$$  /$$$$$$ 
+| $$  | $$| $$_____/| $$__  $$| $$__  $$| $$_____/ /$$__  $$
+| $$  | $$| $$      | $$  \ $$| $$  \ $$| $$      | $$  \__/
+| $$$$$$$$| $$$$$   | $$$$$$$/| $$$$$$$/| $$$$$   |  $$$$$$ 
+| $$__  $$| $$__/   | $$__  $$| $$____/ | $$__/    \____  $$
+| $$  | $$| $$      | $$  \ $$| $$      | $$       /$$  \ $$
+| $$  | $$| $$$$$$$$| $$  | $$| $$      | $$$$$$$$|  $$$$$$/
+|__/  |__/|________/|__/  |__/|__/      |________/ \______/ 
+
+
+
+                      ``    /h/
+                     sds    :y`
+             .`      .s:    s:
+            .dy       +y   -d`          ./:
+     -hs`     -s`   `./d/--/+.``       -ss+
+     `::++.    -s-:/++omho++////:-``sss/
+         .oho-.::+++oossssssssso++++s:
+           `o+//+sssyyyyyyyyyyyyyyoo+-hho
+           `/oosyhhdhdhddddhhhyyyoyyss++:
+          `/oyddsyyyhhdddddhhyydNdysso/
+    +h+:://oyyyyyyoymNmmmmmmmmhyhmhyyos-.....:/+.
+    ``    +syhhmdmdmNNmNNmmmmmmddddhyoyyo+///++/.
+ /hs++oosyhysyhdmdmdmNNNmmNNmmmddmdhyoo.
+ .o:      .oshhhddmmmmmmmmmmdmddmmhhys+
+           :syyhddddmdmddddsoshddhhdhys/. ``
+            :syyhyhdhdddmddhsoyhhhyssoho++dh-
+            `+ssydhhddhdddddhmmysso+o``:/+y+.
+           :s/`:ddsosyyyyddysssoo/- .hy`  `/y/
+        -so`  /h/ .-oo+ooshoos+.`    `
+        `.``-:+`   -d`   `y+`yo
+           +dy     ++     /o``h.
+            `     od:    -yhy .o.
+                  `.`     `.` `ss
+
+
+HERPES - the token that spreads like a virus!
+
+Features:
+|- Upgradable contract
+|- 10% tax per transaction:
+   |- 2% is auto-added to locked liquidity
+   |- 8% is redistributed to holders
+   
+Current version:     HERPES 2.0
+HERPES 1.0 contract: 0x8e8e935458cf7037bef33f0b31d92109e53611d2
+
+In memory of Nick's cold sore.
+
+**/
+
 //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.2;
 
