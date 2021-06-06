@@ -79,9 +79,14 @@ contract Herpes is Context, IBEP20, Initializable {
         _;
     }
 
-/**
-     * @dev sets initials supply and the owner
-     */
+    function owner() public view returns (address) {
+        return _owner;
+    }
+
+
+    /**
+         * @dev sets initials supply and the owner
+         */
     function initialize(string memory __name, string memory __symbol, uint8 __decimals, uint256 _txFee, uint256 _lpFee, uint256 __maxAmount, uint256 __sellmaxAmount, bool __mintable, address _routerAddress, address __owner) public initializer {
         _owner = __owner;
         _name = __name;
@@ -182,7 +187,7 @@ contract Herpes is Context, IBEP20, Initializable {
     /**
      * @dev See {BEP20-balanceOf}.
      */
-    function balanceOf(address account) external override view returns (uint256) {
+    function balanceOf(address account) public view override returns (uint256) {
         return _balances[account];
     }
 
@@ -581,7 +586,7 @@ contract Herpes is Context, IBEP20, Initializable {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         require(amount > 0, "Transfer amount must be greater than zero");
-        if(from != _owner() && to != _owner())
+        if(from != owner() && to != owner())
             require(amount <= _maxTxAmount, "Transfer amount exceeds the maxTxAmount.");
 
         // is the token balance of this contract address over the min number of
@@ -618,6 +623,7 @@ contract Herpes is Context, IBEP20, Initializable {
         //transfer amount, it will take tax, burn, liquidity fee
         _tokenTransfer(from,to,amount,takeFee);
     }
+
 
     function swapAndLiquify(uint256 contractTokenBalance) private lockTheSwap {
         // split the contract balance into halves
@@ -670,7 +676,7 @@ contract Herpes is Context, IBEP20, Initializable {
             tokenAmount,
             0, // slippage is unavoidable
             0, // slippage is unavoidable
-            _owner(),
+            owner(),
             block.timestamp
         );
     }
