@@ -7,6 +7,7 @@ import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "./IUniswapV2Router02.sol";
+import "./IUniswapV2Factory.sol";
 
 contract Herpes is Context, IBEP20, Initializable {
 
@@ -86,7 +87,7 @@ contract Herpes is Context, IBEP20, Initializable {
         _name = __name;
         _symbol = __symbol;
         _decimals = __decimals;
-        _tTotal = _supply * 10 ** _decimals;
+        _tTotal = _totalSupply * 10 ** _decimals;
         _rTotal = (MAX - (MAX % _tTotal));
         _taxFee = _txFee;
         _liquidityFee = _lpFee;
@@ -97,8 +98,10 @@ contract Herpes is Context, IBEP20, Initializable {
 
 
         _rOwned[__owner] = _rTotal;
-       /* _mintable = __mintable;
-        _mint(__owner, __amount);*/
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(_routerAddress);
+
+        /* _mintable = __mintable;
+         _mint(__owner, __amount);*/
 
         uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
         .createPair(address(this), _uniswapV2Router.WETH());
@@ -578,7 +581,7 @@ contract Herpes is Context, IBEP20, Initializable {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         require(amount > 0, "Transfer amount must be greater than zero");
-        if(from != owner() && to != owner())
+        if(from != _owner() && to != _owner())
             require(amount <= _maxTxAmount, "Transfer amount exceeds the maxTxAmount.");
 
         // is the token balance of this contract address over the min number of
@@ -667,7 +670,7 @@ contract Herpes is Context, IBEP20, Initializable {
             tokenAmount,
             0, // slippage is unavoidable
             0, // slippage is unavoidable
-            owner(),
+            _owner(),
             block.timestamp
         );
     }
@@ -720,6 +723,7 @@ contract Herpes is Context, IBEP20, Initializable {
         _takeLiquidity(tLiquidity);
         _reflectFee(rFee, tFee);
         emit Transfer(sender, recipient, tTransferAmount);
+
     }
 
 }
