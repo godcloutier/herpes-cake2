@@ -34,7 +34,7 @@ module.exports = {
    *
    * $ truffle test --network <network-name>
    */
-
+plugins:["truffle-flatten"],
   networks: {
     development: {
       host: "127.0.0.1",     // Localhost (default: none)
