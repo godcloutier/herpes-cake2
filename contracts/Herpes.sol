@@ -5,18 +5,62 @@ import "./IBEP20.sol";
 import "../node_modules/@openzeppelin/contracts/utils/Context.sol";
 import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol";
-
+import "@openzeppelin/contracts/utils/Address.sol";
+import "./IUniswapV2Router02.sol";
 
 contract Herpes is Context, IBEP20, Initializable {
 
     using SafeMath for uint256;
+    using Address for address;
 
+    mapping (address => uint256) private _rOwned;
+    mapping (address => uint256) private _tOwned;
     mapping (address => uint256) private _balances;
     mapping (address => mapping (address => uint256)) private _allowances;
+
+    mapping (address => bool) private _isExcludedFromFee;
+
+    mapping (address => bool) private _isExcluded;
+    address[] private _excluded;
+
+    uint256 private constant MAX = ~uint256(0);
+    uint256 private _tTotal;
+    uint256 private _rTotal;
+    uint256 private _tFeeTotal;
+
     uint256 private _totalSupply;
     string private _name;
     string private _symbol;
     uint8 private _decimals;
+
+    uint256 public _taxFee;
+    uint256 private _previousTaxFee;
+
+    uint256 public _liquidityFee;
+    uint256 private _previousLiquidityFee;
+
+    IUniswapV2Router02 public immutable uniswapV2Router;
+    address public immutable uniswapV2Pair;
+
+    bool inSwapAndLiquify;
+    bool public swapAndLiquifyEnabled = true;
+
+    uint256 public _maxTxAmount;
+    uint256 public numTokensSellToAddToLiquidity;
+
+    event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
+    event SwapAndLiquifyEnabledUpdated(bool enabled);
+    event SwapAndLiquify(
+        uint256 tokensSwapped,
+        uint256 ethReceived,
+        uint256 tokensIntoLiqudity
+    );
+
+    modifier lockTheSwap {
+        inSwapAndLiquify = true;
+        _;
+        inSwapAndLiquify = false;
+    }
 
     address private _owner;
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
