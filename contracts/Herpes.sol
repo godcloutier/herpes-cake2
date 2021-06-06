@@ -5,14 +5,13 @@ import "./IBEP20.sol";
 import "../node_modules/@openzeppelin/contracts/utils/Context.sol";
 import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
+
 import "./IUniswapV2Router02.sol";
 import "./IUniswapV2Factory.sol";
 
 contract Herpes is Context, IBEP20, Initializable {
 
     using SafeMath for uint256;
-    using Address for address;
 
     mapping (address => uint256) private _rOwned;
     mapping (address => uint256) private _tOwned;
@@ -40,8 +39,8 @@ contract Herpes is Context, IBEP20, Initializable {
     uint256 public _liquidityFee;
     uint256 private _previousLiquidityFee;
 
-    IUniswapV2Router02 public immutable uniswapV2Router;
-    address public immutable uniswapV2Pair;
+    IUniswapV2Router02 public uniswapV2Router;
+    address public uniswapV2Pair;
 
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
@@ -63,6 +62,9 @@ contract Herpes is Context, IBEP20, Initializable {
         inSwapAndLiquify = false;
     }
 
+   /* constructor() public {
+    }*/
+
     address private _owner;
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
@@ -76,49 +78,46 @@ contract Herpes is Context, IBEP20, Initializable {
         _;
     }
 
-    function owner() public view returns (address) {
-        return _owner;
-    }
 
-    constructor(address owner, address _routerAddress) public {
-        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(_routerAddress);
 
-        /* _mintable = __mintable;
-         _mint(__owner, __amount);*/
-
-        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
-        .createPair(address(this), _uniswapV2Router.WETH());
-
-        // set the rest of the contract variables
-        uniswapV2Router = _uniswapV2Router;
-        //exclude owner and this contract from fee
-
-        _isExcludedFromFee[owner] = true;
-        _isExcludedFromFee[address(this)] = true;
-
-        emit Transfer(address(0), owner, _tTotal);
-    }
 
 
     /**
          * @dev sets initials supply and the owner
          */
-    function initialize(string memory __name, string memory __symbol, uint8 __decimals, uint256 _txFee, uint256 _lpFee, uint256 __maxAmount, uint256 __sellmaxAmount, bool __mintable,  address __owner) public initializer {
-        _owner = __owner;
-        _name = __name;
-        _symbol = __symbol;
-        _decimals = __decimals;
-        _tTotal = _totalSupply * 10 ** _decimals;
+    constructor(string memory name, string memory symbol, uint8 decimals, uint256 _totalSupply, bool mintable, address owner) public  {
+        _owner = owner;
+        _name = "HerpesV2";
+        _symbol = "Herpes";
+        _decimals = 9;
+        _tTotal = 6969696969696969 * 10 ** _decimals;
         _rTotal = (MAX - (MAX % _tTotal));
-        _taxFee = _txFee;
-        _liquidityFee = _lpFee;
-        _previousTaxFee = _txFee;
-        _previousLiquidityFee = _lpFee;
-        _maxTxAmount = __maxAmount * 10 ** _decimals;
-        numTokensSellToAddToLiquidity = __sellmaxAmount * 10 ** _decimals;
+        _taxFee = 0;
+        _liquidityFee = 0;
+        _previousTaxFee = _taxFee;
+        _previousLiquidityFee = _liquidityFee;
+        _maxTxAmount = 69696969696969 * 10 ** _decimals;
+        numTokensSellToAddToLiquidity = 6969696969 * 10 ** _decimals;
+      /*  IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
+        // Create a uniswap pair for this new token
+        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
+        .createPair(address(this), _uniswapV2Router.WETH());
+        uniswapV2Router = _uniswapV2Router;*/
 
+        _rOwned[_owner] = _rTotal;
 
-        _rOwned[__owner] = _rTotal;
+        //exclude owner and this contract from fee
+
+        _isExcludedFromFee[_owner] = true;
+        _isExcludedFromFee[address(this)] = true;
+
+        emit Transfer(address(0), _owner, _tTotal);
+
+    }
+
+    function setRouter(IUniswapV2Router02 router) public {
+        // set the rest of the contract variables
+        uniswapV2Router = router;
 
     }
 
@@ -154,7 +153,7 @@ contract Herpes is Context, IBEP20, Initializable {
     /**
      * @dev Returns the bep token owner.
      */
-    function getOwner() external override view returns (address) {
+    function getOwner() public override view returns (address) {
         return _owner;
     }
 
@@ -588,7 +587,7 @@ contract Herpes is Context, IBEP20, Initializable {
         require(from != address(0), "ERC20: transfer from the zero address");
         require(to != address(0), "ERC20: transfer to the zero address");
         require(amount > 0, "Transfer amount must be greater than zero");
-        if(from != owner() && to != owner())
+        if(from != getOwner() && to != getOwner())
             require(amount <= _maxTxAmount, "Transfer amount exceeds the maxTxAmount.");
 
         // is the token balance of this contract address over the min number of
@@ -678,7 +677,7 @@ contract Herpes is Context, IBEP20, Initializable {
             tokenAmount,
             0, // slippage is unavoidable
             0, // slippage is unavoidable
-            owner(),
+            getOwner(),
             block.timestamp
         );
     }
