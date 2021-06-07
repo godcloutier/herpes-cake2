@@ -5479,7 +5479,7 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/contracts/BEP20TokenFactory.sol",
     "exportedSymbols": {
       "Address": [
-        4287
+        4307
       ],
       "BEP20TokenFactory": [
         89
@@ -5488,31 +5488,31 @@
         110
       ],
       "Context": [
-        4310
+        4330
       ],
       "ERC1967Proxy": [
-        3362
+        3382
       ],
       "ERC1967Upgrade": [
-        3719
+        3739
       ],
       "IBeacon": [
-        3781
+        3801
       ],
       "IProxyInitialize": [
-        2461
+        2481
       ],
       "Ownable": [
-        3309
+        3329
       ],
       "Proxy": [
-        3771
+        3791
       ],
       "StorageSlot": [
-        4370
+        4390
       ],
       "TransparentUpgradeableProxy": [
-        3945
+        3965
       ]
     },
     "id": 90,
@@ -5549,7 +5549,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 90,
-        "sourceUnit": 2462,
+        "sourceUnit": 2482,
         "src": "101:32:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5561,7 +5561,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 90,
-        "sourceUnit": 3310,
+        "sourceUnit": 3330,
         "src": "134:68:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -5574,7 +5574,7 @@
               "id": 5,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3309,
+              "referencedDeclaration": 3329,
               "src": "234:7:0"
             },
             "id": 6,
@@ -5590,8 +5590,8 @@
         "id": 89,
         "linearizedBaseContracts": [
           89,
-          3309,
-          4310
+          3329,
+          4330
         ],
         "name": "BEP20TokenFactory",
         "nameLocation": "213:17:0",
@@ -5944,7 +5944,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                        "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                         "typeString": "contract IProxyInitialize"
                       },
                       "typeName": {
@@ -5954,13 +5954,13 @@
                           "id": 54,
                           "name": "IProxyInitialize",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 2461,
+                          "referencedDeclaration": 2481,
                           "src": "740:16:0"
                         },
-                        "referencedDeclaration": 2461,
+                        "referencedDeclaration": 2481,
                         "src": "740:16:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       },
@@ -6038,10 +6038,10 @@
                       "name": "IProxyInitialize",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2461,
+                      "referencedDeclaration": 2481,
                       "src": "765:16:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IProxyInitialize_$2461_$",
+                        "typeIdentifier": "t_type$_t_contract$_IProxyInitialize_$2481_$",
                         "typeString": "type(contract IProxyInitialize)"
                       }
                     },
@@ -6056,7 +6056,7 @@
                     "src": "765:37:0",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                      "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                       "typeString": "contract IProxyInitialize"
                     }
                   },
@@ -6174,7 +6174,7 @@
                         "referencedDeclaration": 56,
                         "src": "812:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       },
@@ -6185,7 +6185,7 @@
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2460,
+                      "referencedDeclaration": 2480,
                       "src": "812:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$_t_uint256_$_t_bool_$_t_address_$returns$__$",
@@ -6224,7 +6224,7 @@
                             "referencedDeclaration": 56,
                             "src": "918:5:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                              "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                               "typeString": "contract IProxyInitialize"
                             }
                           }
@@ -6232,7 +6232,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                              "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                               "typeString": "contract IProxyInitialize"
                             }
                           ],
@@ -6319,7 +6319,7 @@
                         "referencedDeclaration": 56,
                         "src": "950:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       }
@@ -6327,7 +6327,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       ],
@@ -6384,7 +6384,7 @@
                   "id": 38,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3258,
+                  "referencedDeclaration": 3278,
                   "src": "599:9:0"
                 },
                 "nodeType": "ModifierInvocation",
@@ -6645,7 +6645,7 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/contracts/BEP20TokenFactory.sol",
     "exportedSymbols": {
       "Address": [
-        4287
+        4307
       ],
       "BEP20TokenFactory": [
         89
@@ -6654,31 +6654,31 @@
         110
       ],
       "Context": [
-        4310
+        4330
       ],
       "ERC1967Proxy": [
-        3362
+        3382
       ],
       "ERC1967Upgrade": [
-        3719
+        3739
       ],
       "IBeacon": [
-        3781
+        3801
       ],
       "IProxyInitialize": [
-        2461
+        2481
       ],
       "Ownable": [
-        3309
+        3329
       ],
       "Proxy": [
-        3771
+        3791
       ],
       "StorageSlot": [
-        4370
+        4390
       ],
       "TransparentUpgradeableProxy": [
-        3945
+        3965
       ]
     },
     "id": 90,
@@ -6715,7 +6715,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 90,
-        "sourceUnit": 2462,
+        "sourceUnit": 2482,
         "src": "101:32:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6727,7 +6727,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 90,
-        "sourceUnit": 3310,
+        "sourceUnit": 3330,
         "src": "134:68:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -6740,7 +6740,7 @@
               "id": 5,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3309,
+              "referencedDeclaration": 3329,
               "src": "234:7:0"
             },
             "id": 6,
@@ -6756,8 +6756,8 @@
         "id": 89,
         "linearizedBaseContracts": [
           89,
-          3309,
-          4310
+          3329,
+          4330
         ],
         "name": "BEP20TokenFactory",
         "nameLocation": "213:17:0",
@@ -7110,7 +7110,7 @@
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                        "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                         "typeString": "contract IProxyInitialize"
                       },
                       "typeName": {
@@ -7120,13 +7120,13 @@
                           "id": 54,
                           "name": "IProxyInitialize",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 2461,
+                          "referencedDeclaration": 2481,
                           "src": "740:16:0"
                         },
-                        "referencedDeclaration": 2461,
+                        "referencedDeclaration": 2481,
                         "src": "740:16:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       },
@@ -7204,10 +7204,10 @@
                       "name": "IProxyInitialize",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2461,
+                      "referencedDeclaration": 2481,
                       "src": "765:16:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_IProxyInitialize_$2461_$",
+                        "typeIdentifier": "t_type$_t_contract$_IProxyInitialize_$2481_$",
                         "typeString": "type(contract IProxyInitialize)"
                       }
                     },
@@ -7222,7 +7222,7 @@
                     "src": "765:37:0",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                      "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                       "typeString": "contract IProxyInitialize"
                     }
                   },
@@ -7340,7 +7340,7 @@
                         "referencedDeclaration": 56,
                         "src": "812:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       },
@@ -7351,7 +7351,7 @@
                       "lValueRequested": false,
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 2460,
+                      "referencedDeclaration": 2480,
                       "src": "812:16:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_uint8_$_t_uint256_$_t_bool_$_t_address_$returns$__$",
@@ -7390,7 +7390,7 @@
                             "referencedDeclaration": 56,
                             "src": "918:5:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                              "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                               "typeString": "contract IProxyInitialize"
                             }
                           }
@@ -7398,7 +7398,7 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                              "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                               "typeString": "contract IProxyInitialize"
                             }
                           ],
@@ -7485,7 +7485,7 @@
                         "referencedDeclaration": 56,
                         "src": "950:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       }
@@ -7493,7 +7493,7 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_contract$_IProxyInitialize_$2461",
+                          "typeIdentifier": "t_contract$_IProxyInitialize_$2481",
                           "typeString": "contract IProxyInitialize"
                         }
                       ],
@@ -7550,7 +7550,7 @@
                   "id": 38,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3258,
+                  "referencedDeclaration": 3278,
                   "src": "599:9:0"
                 },
                 "nodeType": "ModifierInvocation",
@@ -7813,7 +7813,8 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-06-07T18:02:04.857Z",
+  "updatedAt": "2021-06-07T18:32:09.719Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

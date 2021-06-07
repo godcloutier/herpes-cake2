@@ -62,7 +62,7 @@ import "../node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol";
 import "./IUniswapV2Router02.sol";
 import "./IUniswapV2Factory.sol";
 
-contract Herpes is Context, IBEP20, Initializable {
+contract Herpes is Context, IBEP20 {
 
     using SafeMath for uint256;
 
@@ -138,33 +138,36 @@ contract Herpes is Context, IBEP20, Initializable {
     /**
          * @dev sets initials supply and the owner
          */
-    constructor(string memory name, string memory symbol, uint8 decimals, uint256 _totalSupply, bool mintable, address owner) public  {
-        _owner = owner;
+    constructor(string memory name, string memory symbol, uint8 decimals, uint256 __totalSupply, bool mintable, address owner) public  {
+        _owner = msg.sender;
         _name = "Herpes";
+        _mintable = false;
         _symbol = "HERPES";
         _decimals = 9;
-        _tTotal = 696969696969696969696969;  /* At 9 decimals, this supplies 696969696969696.969696969 tokens. */
+        _tTotal = 696969696969696969696969 * 10**9;  /* At 9 decimals, this supplies 696969696969696.969696969 tokens. */
         _rTotal = (MAX - (MAX % _tTotal));
-        _taxFee = 0;
-        _liquidityFee = 0;
+        _taxFee = 8;
+        _liquidityFee = 2;
         _previousTaxFee = _taxFee;
         _previousLiquidityFee = _liquidityFee;
         _maxTxAmount = 5000000 * 10**6 * 10**9;
         numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+        _totalSupply = _tTotal;
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
         // Create a uniswap pair for this new token
     uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
         .createPair(address(this), _uniswapV2Router.WETH());
         uniswapV2Router = _uniswapV2Router;
 
-        _rOwned[_owner] = _rTotal;
+        _rOwned[msg.sender] = _tTotal;
+        _balances[msg.sender] = _tTotal;
 
         //exclude owner and this contract from fee
 
         _isExcludedFromFee[_owner] = true;
         _isExcludedFromFee[address(this)] = true;
 
-        emit Transfer(address(0), _owner, _tTotal);
+        emit Transfer(address(0),msg.sender, _tTotal);
 
     }
 
