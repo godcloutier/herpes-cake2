@@ -151,11 +151,11 @@ contract Herpes is Context, IBEP20, Initializable {
         _previousLiquidityFee = _liquidityFee;
         _maxTxAmount = 69696969696969 * 10 ** _decimals;
         numTokensSellToAddToLiquidity = 6969696969 * 10 ** _decimals;
-      /*  IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
+        IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
         // Create a uniswap pair for this new token
-        uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
+    uniswapV2Pair = IUniswapV2Factory(_uniswapV2Router.factory())
         .createPair(address(this), _uniswapV2Router.WETH());
-        uniswapV2Router = _uniswapV2Router;*/
+        uniswapV2Router = _uniswapV2Router;
 
         _rOwned[_owner] = _rTotal;
 
