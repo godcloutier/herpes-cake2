@@ -5,7 +5,7 @@ IUniswapV2Router02(0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F);
 const BEP20TokenFactory = artifacts.require("BEP20TokenFactory");
 const Web3 = require('web3');
 const herpesContract = artifacts.require("Herpes");
-const owner = '0x8B71ac4EB7B746179C2f9Dc572fb669c36dd937C';
+const owner = '0x946Eb7AB6fFAe621b3776427404849A47706e478';
 let bep20TokenInstance;
 
 module.exports = function(deployer)  {
