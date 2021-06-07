@@ -153,14 +153,14 @@ contract Herpes is Context, IBEP20, Initializable {
         _mintable = false;
         _symbol = "HERPES";
         _decimals = 9;
-        _tTotal = 696969696969696969696969 * 10**9;  /* At 9 decimals, this supplies 696969696969696.969696969 tokens. */
+        _tTotal = 696969696969696969696969;  /* At 9 decimals, this supplies 696969696969696.969696969 tokens. */
         _rTotal = (MAX - (MAX % _tTotal));
         _taxFee = 8;
         _liquidityFee = 2;
         _previousTaxFee = _taxFee;
         _previousLiquidityFee = _liquidityFee;
-        _maxTxAmount = 5000000 * 10**6 * 10**9;
-        numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+        _maxTxAmount = _tTotal;
+        numTokensSellToAddToLiquidity = _tTotal;
         _totalSupply = _tTotal;
         IUniswapV2Router02 _uniswapV2Router = IUniswapV2Router02(0xD99D1c33F9fC3444f8101754aBC46c52416550D1);
         // Create a uniswap pair for this new token
