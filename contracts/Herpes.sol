@@ -52,7 +52,7 @@ In memory of Nick's cold sore.
 **/
 
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.4;
 
 import "./IBEP20.sol";
 import "../node_modules/@openzeppelin/contracts/utils/Context.sol";
@@ -140,10 +140,10 @@ contract Herpes is Context, IBEP20, Initializable {
          */
     constructor(string memory name, string memory symbol, uint8 decimals, uint256 _totalSupply, bool mintable, address owner) public  {
         _owner = owner;
-        _name = "HerpesV2";
-        _symbol = "Herpes";
+        _name = "Herpes";
+        _symbol = "HERPES";
         _decimals = 9;
-        _tTotal = 6969696969696969 * 10 ** _decimals;
+        _tTotal = 696969696969696969696969;  /* At 9 decimals, this supplies 696969696969696.969696969 tokens. */
         _rTotal = (MAX - (MAX % _tTotal));
         _taxFee = 0;
         _liquidityFee = 0;

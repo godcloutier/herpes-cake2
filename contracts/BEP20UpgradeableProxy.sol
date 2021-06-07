@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.2;
+pragma solidity ^0.8.4;
 import "../node_modules/@openzeppelin/contracts/proxy/transparent/TransparentUpgradeableProxy.sol";
 
 contract BEP20UpgradeableProxy is TransparentUpgradeableProxy {
