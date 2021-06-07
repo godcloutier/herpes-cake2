@@ -23,6 +23,8 @@
 //
  const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
+const gas = 6721975 * 3;
+
 
 module.exports = {
   /**
@@ -46,7 +48,8 @@ plugins:["truffle-flatten"],
       network_id: 97,
       confirmations: 5,
       timeoutBlocks: 200,
-      skipDryRun: true
+      skipDryRun: true,
+      gas: gas
     },
     bsc: {
       provider: () => new HDWalletProvider(mnemonic, `https://bsc-dataseed1.binance.org`),
