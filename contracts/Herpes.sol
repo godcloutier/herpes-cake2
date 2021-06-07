@@ -1,3 +1,5 @@
+//SPDX-License-Identifier: UNLICENSED
+
 /**
 
  /$$   /$$ /$$$$$$$$ /$$$$$$$  /$$$$$$$  /$$$$$$$$  /$$$$$$ 
@@ -47,22 +49,29 @@ Features:
 Current version:     HERPES 2.0
 HERPES 1.0 contract: 0x8e8e935458cf7037bef33f0b31d92109e53611d2
 
-In memory of Nick's cold sore.
+Dedicated to Nick's cold sore.
 
 **/
 
-//SPDX-License-Identifier: UNLICENSED
+// Compiler version.
 pragma solidity ^0.8.4;
 
-import "./IBEP20.sol";
+// Third-party imports.
 import "../node_modules/@openzeppelin/contracts/utils/Context.sol";
 import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "../node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol";
 
+// Local application imports.
+import "./IBEP20.sol";
 import "./IUniswapV2Router02.sol";
 import "./IUniswapV2Factory.sol";
 
+<<<<<<< HEAD
 contract Herpes is Context, IBEP20 {
+=======
+
+contract Herpes is Context, IBEP20, Initializable {
+>>>>>>> 567829de9afea8ae935c52e6924bdca352aef926
 
     using SafeMath for uint256;
 

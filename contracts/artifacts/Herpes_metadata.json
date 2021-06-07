@@ -888,11 +888,11 @@
 	},
 	"sources": {
 		"Herpes.sol": {
-			"keccak256": "0x2cb2c3d230531036f5f46b1b58c7d26d89e1210cb949932023fff37b55eeb811",
+			"keccak256": "0xed770078796ea130e28906a6f687e7723da81e31a134536d938c35bf1d1db28e",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://6d915779c4d8e6a73c133d7e36da8834048cc4245b16e8e7e9c7220566f36052",
-				"dweb:/ipfs/QmRJFGmj4fkbygXwEw6142u8r9CZRXShU4QxqugtJV4X69"
+				"bzz-raw://5bdde1909b413eaa9238c8227eb7d0f0e1cce52a848917f8bc343ef41e680295",
+				"dweb:/ipfs/Qmdgy7wVJVEieSr8Smk5qJWGv3pVmRKDjQHpv9ZuCANAug"
 			]
 		},
 		"IBEP20.sol": {
