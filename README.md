@@ -19,3 +19,5 @@ To install dependencies, if not already installed, use:
 To deploy the contract to the BSC testnet, use:
     
     truffle migrate --network=testnet --reset
+    
+**NOTE:** Windows users may experience issues with Truffle's Solidity compiler.
