@@ -15,15 +15,15 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol",
     "exportedSymbols": {
       "Initializable": [
-        3991
+        4011
       ]
     },
-    "id": 3992,
+    "id": 4012,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3947,
+        "id": 3967,
         "literals": [
           "solidity",
           "^",
@@ -39,15 +39,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 3948,
+          "id": 3968,
           "nodeType": "StructuredDocumentation",
           "src": "104:934:18",
           "text": " @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\n behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an\n external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\n function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\n TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\n possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\n CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\n that all initializers are idempotent. This is not verified automatically as constructors are by Solidity."
         },
         "fullyImplemented": true,
-        "id": 3991,
+        "id": 4011,
         "linearizedBaseContracts": [
-          3991
+          4011
         ],
         "name": "Initializable",
         "nameLocation": "1057:13:18",
@@ -56,17 +56,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3949,
+              "id": 3969,
               "nodeType": "StructuredDocumentation",
               "src": "1078:73:18",
               "text": " @dev Indicates that the contract has been initialized."
             },
-            "id": 3951,
+            "id": 3971,
             "mutability": "mutable",
             "name": "_initialized",
             "nameLocation": "1169:12:18",
             "nodeType": "VariableDeclaration",
-            "scope": 3991,
+            "scope": 4011,
             "src": "1156:25:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -75,7 +75,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3950,
+              "id": 3970,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "1156:4:18",
@@ -89,17 +89,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3952,
+              "id": 3972,
               "nodeType": "StructuredDocumentation",
               "src": "1188:91:18",
               "text": " @dev Indicates that the contract is in the process of being initialized."
             },
-            "id": 3954,
+            "id": 3974,
             "mutability": "mutable",
             "name": "_initializing",
             "nameLocation": "1297:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 3991,
+            "scope": 4011,
             "src": "1284:26:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -108,7 +108,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3953,
+              "id": 3973,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "1284:4:18",
@@ -121,7 +121,7 @@
           },
           {
             "body": {
-              "id": 3989,
+              "id": 4009,
               "nodeType": "Block",
               "src": "1438:348:18",
               "statements": [
@@ -133,17 +133,17 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 3961,
+                        "id": 3981,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 3958,
+                          "id": 3978,
                           "name": "_initializing",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3954,
+                          "referencedDeclaration": 3974,
                           "src": "1456:13:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -153,7 +153,7 @@
                         "nodeType": "BinaryOperation",
                         "operator": "||",
                         "rightExpression": {
-                          "id": 3960,
+                          "id": 3980,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -163,11 +163,11 @@
                           "prefix": true,
                           "src": "1473:13:18",
                           "subExpression": {
-                            "id": 3959,
+                            "id": 3979,
                             "name": "_initialized",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3951,
+                            "referencedDeclaration": 3971,
                             "src": "1474:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -187,7 +187,7 @@
                       },
                       {
                         "hexValue": "496e697469616c697a61626c653a20636f6e747261637420697320616c726561647920696e697469616c697a6564",
-                        "id": 3962,
+                        "id": 3982,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -213,7 +213,7 @@
                           "typeString": "literal_string \"Initializable: contract is already initialized\""
                         }
                       ],
-                      "id": 3957,
+                      "id": 3977,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -227,7 +227,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 3963,
+                    "id": 3983,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -242,23 +242,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3964,
+                  "id": 3984,
                   "nodeType": "ExpressionStatement",
                   "src": "1448:89:18"
                 },
                 {
                   "assignments": [
-                    3966
+                    3986
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3966,
+                      "id": 3986,
                       "mutability": "mutable",
                       "name": "isTopLevelCall",
                       "nameLocation": "1553:14:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3989,
+                      "scope": 4009,
                       "src": "1548:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -267,7 +267,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 3965,
+                        "id": 3985,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "1548:4:18",
@@ -279,9 +279,9 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3969,
+                  "id": 3989,
                   "initialValue": {
-                    "id": 3968,
+                    "id": 3988,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -291,11 +291,11 @@
                     "prefix": true,
                     "src": "1570:14:18",
                     "subExpression": {
-                      "id": 3967,
+                      "id": 3987,
                       "name": "_initializing",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3954,
+                      "referencedDeclaration": 3974,
                       "src": "1571:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -312,38 +312,38 @@
                 },
                 {
                   "condition": {
-                    "id": 3970,
+                    "id": 3990,
                     "name": "isTopLevelCall",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3966,
+                    "referencedDeclaration": 3986,
                     "src": "1598:14:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3980,
+                  "id": 4000,
                   "nodeType": "IfStatement",
                   "src": "1594:98:18",
                   "trueBody": {
-                    "id": 3979,
+                    "id": 3999,
                     "nodeType": "Block",
                     "src": "1614:78:18",
                     "statements": [
                       {
                         "expression": {
-                          "id": 3973,
+                          "id": 3993,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3971,
+                            "id": 3991,
                             "name": "_initializing",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3954,
+                            "referencedDeclaration": 3974,
                             "src": "1628:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -354,7 +354,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 3972,
+                            "id": 3992,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -374,23 +374,23 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3974,
+                        "id": 3994,
                         "nodeType": "ExpressionStatement",
                         "src": "1628:20:18"
                       },
                       {
                         "expression": {
-                          "id": 3977,
+                          "id": 3997,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3975,
+                            "id": 3995,
                             "name": "_initialized",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3951,
+                            "referencedDeclaration": 3971,
                             "src": "1662:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -401,7 +401,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 3976,
+                            "id": 3996,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -421,7 +421,7 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3978,
+                        "id": 3998,
                         "nodeType": "ExpressionStatement",
                         "src": "1662:19:18"
                       }
@@ -429,44 +429,44 @@
                   }
                 },
                 {
-                  "id": 3981,
+                  "id": 4001,
                   "nodeType": "PlaceholderStatement",
                   "src": "1702:1:18"
                 },
                 {
                   "condition": {
-                    "id": 3982,
+                    "id": 4002,
                     "name": "isTopLevelCall",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3966,
+                    "referencedDeclaration": 3986,
                     "src": "1718:14:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3988,
+                  "id": 4008,
                   "nodeType": "IfStatement",
                   "src": "1714:66:18",
                   "trueBody": {
-                    "id": 3987,
+                    "id": 4007,
                     "nodeType": "Block",
                     "src": "1734:46:18",
                     "statements": [
                       {
                         "expression": {
-                          "id": 3985,
+                          "id": 4005,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3983,
+                            "id": 4003,
                             "name": "_initializing",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3954,
+                            "referencedDeclaration": 3974,
                             "src": "1748:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -477,7 +477,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "66616c7365",
-                            "id": 3984,
+                            "id": 4004,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -497,7 +497,7 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3986,
+                        "id": 4006,
                         "nodeType": "ExpressionStatement",
                         "src": "1748:21:18"
                       }
@@ -507,17 +507,17 @@
               ]
             },
             "documentation": {
-              "id": 3955,
+              "id": 3975,
               "nodeType": "StructuredDocumentation",
               "src": "1317:93:18",
               "text": " @dev Modifier to protect an initializer function from being invoked twice."
             },
-            "id": 3990,
+            "id": 4010,
             "name": "initializer",
             "nameLocation": "1424:11:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3956,
+              "id": 3976,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1435:2:18"
@@ -527,7 +527,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 3992,
+        "scope": 4012,
         "src": "1039:749:18",
         "usedErrors": []
       }
@@ -538,15 +538,15 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/node_modules/@openzeppelin/contracts/proxy/utils/Initializable.sol",
     "exportedSymbols": {
       "Initializable": [
-        3991
+        4011
       ]
     },
-    "id": 3992,
+    "id": 4012,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3947,
+        "id": 3967,
         "literals": [
           "solidity",
           "^",
@@ -562,15 +562,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 3948,
+          "id": 3968,
           "nodeType": "StructuredDocumentation",
           "src": "104:934:18",
           "text": " @dev This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\n behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an\n external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\n function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\n TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\n possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\n CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\n that all initializers are idempotent. This is not verified automatically as constructors are by Solidity."
         },
         "fullyImplemented": true,
-        "id": 3991,
+        "id": 4011,
         "linearizedBaseContracts": [
-          3991
+          4011
         ],
         "name": "Initializable",
         "nameLocation": "1057:13:18",
@@ -579,17 +579,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3949,
+              "id": 3969,
               "nodeType": "StructuredDocumentation",
               "src": "1078:73:18",
               "text": " @dev Indicates that the contract has been initialized."
             },
-            "id": 3951,
+            "id": 3971,
             "mutability": "mutable",
             "name": "_initialized",
             "nameLocation": "1169:12:18",
             "nodeType": "VariableDeclaration",
-            "scope": 3991,
+            "scope": 4011,
             "src": "1156:25:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -598,7 +598,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3950,
+              "id": 3970,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "1156:4:18",
@@ -612,17 +612,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 3952,
+              "id": 3972,
               "nodeType": "StructuredDocumentation",
               "src": "1188:91:18",
               "text": " @dev Indicates that the contract is in the process of being initialized."
             },
-            "id": 3954,
+            "id": 3974,
             "mutability": "mutable",
             "name": "_initializing",
             "nameLocation": "1297:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 3991,
+            "scope": 4011,
             "src": "1284:26:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -631,7 +631,7 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 3953,
+              "id": 3973,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
               "src": "1284:4:18",
@@ -644,7 +644,7 @@
           },
           {
             "body": {
-              "id": 3989,
+              "id": 4009,
               "nodeType": "Block",
               "src": "1438:348:18",
               "statements": [
@@ -656,17 +656,17 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 3961,
+                        "id": 3981,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
-                          "id": 3958,
+                          "id": 3978,
                           "name": "_initializing",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3954,
+                          "referencedDeclaration": 3974,
                           "src": "1456:13:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
@@ -676,7 +676,7 @@
                         "nodeType": "BinaryOperation",
                         "operator": "||",
                         "rightExpression": {
-                          "id": 3960,
+                          "id": 3980,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -686,11 +686,11 @@
                           "prefix": true,
                           "src": "1473:13:18",
                           "subExpression": {
-                            "id": 3959,
+                            "id": 3979,
                             "name": "_initialized",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3951,
+                            "referencedDeclaration": 3971,
                             "src": "1474:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -710,7 +710,7 @@
                       },
                       {
                         "hexValue": "496e697469616c697a61626c653a20636f6e747261637420697320616c726561647920696e697469616c697a6564",
-                        "id": 3962,
+                        "id": 3982,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -736,7 +736,7 @@
                           "typeString": "literal_string \"Initializable: contract is already initialized\""
                         }
                       ],
-                      "id": 3957,
+                      "id": 3977,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -750,7 +750,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 3963,
+                    "id": 3983,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -765,23 +765,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3964,
+                  "id": 3984,
                   "nodeType": "ExpressionStatement",
                   "src": "1448:89:18"
                 },
                 {
                   "assignments": [
-                    3966
+                    3986
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3966,
+                      "id": 3986,
                       "mutability": "mutable",
                       "name": "isTopLevelCall",
                       "nameLocation": "1553:14:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3989,
+                      "scope": 4009,
                       "src": "1548:19:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -790,7 +790,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 3965,
+                        "id": 3985,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "1548:4:18",
@@ -802,9 +802,9 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3969,
+                  "id": 3989,
                   "initialValue": {
-                    "id": 3968,
+                    "id": 3988,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -814,11 +814,11 @@
                     "prefix": true,
                     "src": "1570:14:18",
                     "subExpression": {
-                      "id": 3967,
+                      "id": 3987,
                       "name": "_initializing",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3954,
+                      "referencedDeclaration": 3974,
                       "src": "1571:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -835,38 +835,38 @@
                 },
                 {
                   "condition": {
-                    "id": 3970,
+                    "id": 3990,
                     "name": "isTopLevelCall",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3966,
+                    "referencedDeclaration": 3986,
                     "src": "1598:14:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3980,
+                  "id": 4000,
                   "nodeType": "IfStatement",
                   "src": "1594:98:18",
                   "trueBody": {
-                    "id": 3979,
+                    "id": 3999,
                     "nodeType": "Block",
                     "src": "1614:78:18",
                     "statements": [
                       {
                         "expression": {
-                          "id": 3973,
+                          "id": 3993,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3971,
+                            "id": 3991,
                             "name": "_initializing",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3954,
+                            "referencedDeclaration": 3974,
                             "src": "1628:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -877,7 +877,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 3972,
+                            "id": 3992,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -897,23 +897,23 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3974,
+                        "id": 3994,
                         "nodeType": "ExpressionStatement",
                         "src": "1628:20:18"
                       },
                       {
                         "expression": {
-                          "id": 3977,
+                          "id": 3997,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3975,
+                            "id": 3995,
                             "name": "_initialized",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3951,
+                            "referencedDeclaration": 3971,
                             "src": "1662:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -924,7 +924,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "74727565",
-                            "id": 3976,
+                            "id": 3996,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -944,7 +944,7 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3978,
+                        "id": 3998,
                         "nodeType": "ExpressionStatement",
                         "src": "1662:19:18"
                       }
@@ -952,44 +952,44 @@
                   }
                 },
                 {
-                  "id": 3981,
+                  "id": 4001,
                   "nodeType": "PlaceholderStatement",
                   "src": "1702:1:18"
                 },
                 {
                   "condition": {
-                    "id": 3982,
+                    "id": 4002,
                     "name": "isTopLevelCall",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3966,
+                    "referencedDeclaration": 3986,
                     "src": "1718:14:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 3988,
+                  "id": 4008,
                   "nodeType": "IfStatement",
                   "src": "1714:66:18",
                   "trueBody": {
-                    "id": 3987,
+                    "id": 4007,
                     "nodeType": "Block",
                     "src": "1734:46:18",
                     "statements": [
                       {
                         "expression": {
-                          "id": 3985,
+                          "id": 4005,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 3983,
+                            "id": 4003,
                             "name": "_initializing",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3954,
+                            "referencedDeclaration": 3974,
                             "src": "1748:13:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -1000,7 +1000,7 @@
                           "operator": "=",
                           "rightHandSide": {
                             "hexValue": "66616c7365",
-                            "id": 3984,
+                            "id": 4004,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1020,7 +1020,7 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3986,
+                        "id": 4006,
                         "nodeType": "ExpressionStatement",
                         "src": "1748:21:18"
                       }
@@ -1030,17 +1030,17 @@
               ]
             },
             "documentation": {
-              "id": 3955,
+              "id": 3975,
               "nodeType": "StructuredDocumentation",
               "src": "1317:93:18",
               "text": " @dev Modifier to protect an initializer function from being invoked twice."
             },
-            "id": 3990,
+            "id": 4010,
             "name": "initializer",
             "nameLocation": "1424:11:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3956,
+              "id": 3976,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1435:2:18"
@@ -1050,7 +1050,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 3992,
+        "scope": 4012,
         "src": "1039:749:18",
         "usedErrors": []
       }
@@ -1063,7 +1063,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-06-07T18:02:04.910Z",
+  "updatedAt": "2021-06-07T18:30:51.508Z",
   "devdoc": {
     "details": "This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed behind a proxy. Since a proxied contract can't have a constructor, it's common to move constructor logic to an external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer function so it can only be called once. The {initializer} modifier provided by this contract will have this effect. TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}. CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.",
     "kind": "dev",

@@ -8981,28 +8981,28 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/contracts/BEP20UpgradeableProxy.sol",
     "exportedSymbols": {
       "Address": [
-        4287
+        4307
       ],
       "BEP20UpgradeableProxy": [
         110
       ],
       "ERC1967Proxy": [
-        3362
+        3382
       ],
       "ERC1967Upgrade": [
-        3719
+        3739
       ],
       "IBeacon": [
-        3781
+        3801
       ],
       "Proxy": [
-        3771
+        3791
       ],
       "StorageSlot": [
-        4370
+        4390
       ],
       "TransparentUpgradeableProxy": [
-        3945
+        3965
       ]
     },
     "id": 111,
@@ -9027,7 +9027,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 111,
-        "sourceUnit": 3946,
+        "sourceUnit": 3966,
         "src": "62:99:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9040,7 +9040,7 @@
               "id": 93,
               "name": "TransparentUpgradeableProxy",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3945,
+              "referencedDeclaration": 3965,
               "src": "197:27:1"
             },
             "id": 94,
@@ -9054,10 +9054,10 @@
         "id": 110,
         "linearizedBaseContracts": [
           110,
-          3945,
-          3362,
-          3719,
-          3771
+          3965,
+          3382,
+          3739,
+          3791
         ],
         "name": "BEP20UpgradeableProxy",
         "nameLocation": "172:21:1",
@@ -9119,7 +9119,7 @@
                   "id": 102,
                   "name": "TransparentUpgradeableProxy",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3945,
+                  "referencedDeclaration": 3965,
                   "src": "293:27:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -9243,28 +9243,28 @@
     "absolutePath": "/Users/nicolascloutier/herpes-cake/contracts/BEP20UpgradeableProxy.sol",
     "exportedSymbols": {
       "Address": [
-        4287
+        4307
       ],
       "BEP20UpgradeableProxy": [
         110
       ],
       "ERC1967Proxy": [
-        3362
+        3382
       ],
       "ERC1967Upgrade": [
-        3719
+        3739
       ],
       "IBeacon": [
-        3781
+        3801
       ],
       "Proxy": [
-        3771
+        3791
       ],
       "StorageSlot": [
-        4370
+        4390
       ],
       "TransparentUpgradeableProxy": [
-        3945
+        3965
       ]
     },
     "id": 111,
@@ -9289,7 +9289,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 111,
-        "sourceUnit": 3946,
+        "sourceUnit": 3966,
         "src": "62:99:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -9302,7 +9302,7 @@
               "id": 93,
               "name": "TransparentUpgradeableProxy",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 3945,
+              "referencedDeclaration": 3965,
               "src": "197:27:1"
             },
             "id": 94,
@@ -9316,10 +9316,10 @@
         "id": 110,
         "linearizedBaseContracts": [
           110,
-          3945,
-          3362,
-          3719,
-          3771
+          3965,
+          3382,
+          3739,
+          3791
         ],
         "name": "BEP20UpgradeableProxy",
         "nameLocation": "172:21:1",
@@ -9381,7 +9381,7 @@
                   "id": 102,
                   "name": "TransparentUpgradeableProxy",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3945,
+                  "referencedDeclaration": 3965,
                   "src": "293:27:1"
                 },
                 "nodeType": "ModifierInvocation",
@@ -9507,7 +9507,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-06-07T18:02:04.860Z",
+  "updatedAt": "2021-06-07T18:30:51.465Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
