@@ -15,6 +15,8 @@ To install dependencies, if not already installed, use:
 
     npm install -g truffle
     npm install --save-dev @truffle/hdwallet-provider
+
+`sudo` use may be required depending on your user permissions.
     
 To deploy the contract to the BSC testnet, use:
     
